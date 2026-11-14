@@ -35,3 +35,6 @@ opt.signcolumn    = "yes"
 opt.isfname:append("@-@")
 opt.updatetime = 250
 opt.timeoutlen = 300
+
+-- Windows
+vim.o.winborder = "rounded"
