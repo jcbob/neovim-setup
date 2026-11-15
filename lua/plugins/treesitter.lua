@@ -30,6 +30,7 @@ return {
                     vim.wo.foldexpr = "v:lua.vim.treesitter.foldexpr()"
                     vim.wo.foldmethod = "expr"
                     vim.o.foldlevelstart = 99
+                    vim.wo.foldenable = false
 
                     vim.bo[buf].indentexpr = ""
                     if ft == "c" or ft == "cpp" then

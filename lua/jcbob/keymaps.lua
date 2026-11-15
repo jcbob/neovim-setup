@@ -23,7 +23,10 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n",     "nzzzv")
 vim.keymap.set("n", "N",     "Nzzzv")
 
-
+-- Folding
+vim.keymap.set("n", "<leader>fo", "zR",                 {desc = "[f]old [o]pen all"})
+vim.keymap.set("n", "<leader>fc", "zM",                 {desc = "[f]old [c]lose all"})
+vim.keymap.set("n", "<leader>ft", "za",                 {desc = "[f]old [t]oggle"})
 
 
 
