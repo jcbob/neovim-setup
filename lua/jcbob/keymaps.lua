@@ -1,12 +1,17 @@
 -- Save
-vim.keymap.set("n", "<leader>w",  "<cmd>w<CR>",         { desc = "Save file" })
-vim.keymap.set("n", "<leader>pv", vim.cmd.Ex,           { desc = "Open netrw" })
+vim.keymap.set("n", "<leader>w",  "<cmd>w<CR>",         {desc = "Save file" })
+vim.keymap.set("n", "<leader>pv", vim.cmd.Ex,           {desc = "Open netrw" })
+
+-- Window splitting
+vim.keymap.set("n", "<leader>sv", "<cmd>vsplit<CR>",    {desc = "[s]plit [v]ertical"})
+vim.keymap.set("n", "<leader>sh", "<cmd>split<CR>",     {desc = "[s]plit [h]oritzontal"})
+vim.keymap.set("n", "<leader>sx", "<cmd>close<CR>",     {desc = "[s]plit e[x]it"})
 
 -- Window navigation
-vim.keymap.set("n", "<leader>h", "<C-w>h", { desc = "Window left" })
-vim.keymap.set("n", "<leader>j", "<C-w>j", { desc = "Window down" })
-vim.keymap.set("n", "<leader>k", "<C-w>k", { desc = "Window up" })
-vim.keymap.set("n", "<leader>l", "<C-w>l", { desc = "Window right" })
+vim.keymap.set("n", "<A-h>", "<C-w>h", { desc = "Window left" })
+vim.keymap.set("n", "<A-j>", "<C-w>j", { desc = "Window down" })
+vim.keymap.set("n", "<A-k>", "<C-w>k", { desc = "Window up" })
+vim.keymap.set("n", "<A-l>", "<C-w>l", { desc = "Window right" })
 
 -- Move selected lines up/down
 vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv", { desc = "Move selection down" })
